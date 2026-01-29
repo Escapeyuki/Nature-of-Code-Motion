@@ -1,0 +1,28 @@
+var xoff1 = 0;
+var xoff2 = 10000;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(20, 20);
+  
+  var x = map(noise(xoff1), 0, 1, 0, width);
+  var y = map(noise(xoff2), 0, 1, 0, height);
+  
+  var distance = dist(x, y, mouseX, mouseY);
+  
+  if (distance < 50) {
+    fill(255, 0, 0);
+    x += random(-5, 5);
+    y += random(-5, 5);
+  } else {
+    fill(225);
+  }
+  
+  xoff1 += 0.01;
+  xoff2 += 0.01
+  
+  rect(x, y, 25, 25)
+}
