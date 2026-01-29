@@ -26,3 +26,15 @@ function draw() {
   
   rect(x, y, 25, 25)
 }
+
+/*
+I basically went through the first few coding train videos and followed the tutorials on using the perlin noise.
+On top of the coding train's code, I changed a few things
+  change the opacity of the background, creating a trail effect
+  added an effect where the rectangle will turn red and make random moves when the mouse is close
+
+Overall just experiementing with perlin noise and similar concepts.
+The effect is quite nice
+
+Thinking about how I can implement perlin noise in future projects.
+*/
